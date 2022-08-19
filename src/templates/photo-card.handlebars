@@ -1,0 +1,27 @@
+{{#each this}}
+  <div class='card mt-4 mb-4' style='width: 20rem'>
+    <img src='{{webformatURL}}' class='card-img-top' alt='{{tags}}' />
+    <div class='card-body'>
+      <ul class='list-group list-group-flush'>
+        <li
+          class='list-group-item d-flex justify-content-between align-items-center'
+        >
+          Likes
+          <span class='badge bg-primary rounded-pill'>{{likes}}</span>
+        </li>
+        <li
+          class='list-group-item d-flex justify-content-between align-items-center'
+        >
+          Views
+          <span class='badge bg-primary rounded-pill'>{{views}}</span>
+        </li>
+        <li
+          class='list-group-item d-flex justify-content-between align-items-center'
+        >
+          Downloads
+          <span class='badge bg-primary rounded-pill'>{{downloads}}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+{{/each}}
